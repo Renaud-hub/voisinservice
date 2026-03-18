@@ -1,0 +1,16 @@
+{
+  "name": "voisinservice",
+  "version": "1.0.0",
+  "description": "Marketplace de services entre voisins avec paiement MTN MoMo",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/server.js",
+    "install:all": "npm install && cd frontend && npm install"
+  },
+  "keywords": ["marketplace", "services", "voisins", "mtn-momo"],
+  "author": "VoisinService Team",
+  "license": "MIT"
+}
